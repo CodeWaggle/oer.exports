@@ -1526,6 +1526,7 @@ div.section .titlepage .abstract > .title {
  * Features args(title color, bkgrnd color, path to svg)
  ******************************************************/
 .art-connection {
+  page-break-inside: avoid;
   background-color: #ffffcc;
 }
 .art-connection * p {
@@ -1573,6 +1574,7 @@ div.section .titlepage .abstract > .title {
   text-indent: 0em;
 }
 .career {
+  page-break-inside: avoid;
   background-color: #ffffcc;
 }
 .career * p {
@@ -1661,6 +1663,7 @@ div.section .titlepage .abstract > .title {
   color: #cc6633;
 }
 .everyday {
+  page-break-inside: avoid;
   background-color: #ffffcc;
 }
 .everyday * p {
@@ -1749,6 +1752,7 @@ div.section .titlepage .abstract > .title {
   color: #cc6633;
 }
 .evolution {
+  page-break-inside: avoid;
   background-color: #ffffcc;
 }
 .evolution * p {
@@ -2065,6 +2069,9 @@ img {
 .chapter h1.title .cnx-gentext-t::before {
   content: "| ";
   color: black;
+}
+.chapter h1.title .cnx-gentext-t > sup {
+  display: none;
 }
 a {
   font-weight: bold;
