@@ -191,5 +191,16 @@
     </note>
   </section>
 
+  <section class="summary">
+  <figure id="cute-dog">
+    <title>The World's Cutest Dog</title>
+    <media id="dogpic" alt="A dog sitting on a bed">
+      <image mime-type="image/jpeg" src="image1.jpg" />
+    </media>
+    <caption>Notice how cute the dog is just sitting there.</caption>
+  </figure>
+  </section>
+
+
 </content>
 </document>

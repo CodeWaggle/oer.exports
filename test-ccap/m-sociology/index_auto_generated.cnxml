@@ -94,11 +94,33 @@
       </note>
 </section>
 
+<section class="summary">
+  <figure id="dog">
+    <title>The World's Cutest Dog</title>
+    <media id="dc" alt="A dog sitting on a bed">
+      <image mime-type="image/jpeg" src="image1.jpg" />
+    </media>
+    <caption>Notice how cute the dog is just sitting there.</caption>
+  </figure>
+</section>
+
+
+
   </content>
   <glossary id="glossary601">
+    <figure id="cute-dog">
+      <title>The World's Cutest Dog</title>
+      <media id="dogpic" alt="A dog sitting on a bed">
+        <image mime-type=" image/jpeg" src="image1.jpg" />
+      </media>
+      <caption> Notice how cute the dog is just sitting there.</caption>
+    </figure>
     <definition id="import-auto-id815396">
       <term id="import-auto-id832297">aggregate</term>
       <meaning id="import-auto-id537237">  a collection of people who exist in the same place at the same time, but who don’t interact or share a sense of identity</meaning>
+    <media id="greyhound" alt="A greyhound relaxing on a bed.">
+      <image mime-type="image/jpeg" src="image1.jpg" />
+    </media>  
     </definition>
     <definition id="import-auto-id1432227">
       <term id="import-auto-id1468560">category</term>
