@@ -304,11 +304,11 @@ body {
   text-align: justify !important;
 }
 
-img { max-height:9.5in; }
+img { max-height: 9.5in; }
 
 .chapter h1.title {
   /*reset left only*/
-  margin-left:0 !important;
+  margin-left: 0 !important;
   padding-left: 0 !important;
   font-size: 35pt; /* x-large; */
   font-weight: bold;
@@ -329,7 +329,10 @@ img { max-height:9.5in; }
   }
 }
 
-a { font-weight: bold; color: @tuscany;}
+a { 
+  font-weight: bold; 
+  color: @tuscany;
+}
 
 
 h1, h2, h3, h4 {
@@ -360,7 +363,7 @@ h3 {
 
 h4 {
   color: @green;
-  font-style:italic;
+  font-style: italic;
 }
 
 blockquote {
@@ -383,13 +386,13 @@ p {
   /* subsequent paragraphs are indented */
   text-indent: 2em;
   /*reset margins so subsequent paragraphs start next line  */
-  margin:0;
+  margin: 0;
 }
 
 .glossary {
   // End-of-chapter material should start on a new page
   page-break-before: always;
-  display:inline;
+  display: inline;
 
   .title {
     /* Change "Glossary" to "Key Terms" */
@@ -398,24 +401,21 @@ p {
     font-size: large !important;
     padding: 0em !important;
     display: block !important;
-    text-transform:uppercase;
+    text-transform: uppercase;
   }
 
   // Remove ":"
   dt::after { content: " " !important; }
 }
 
-.section > .title { page-break-after:avoid; }
-
-//img, figure, subfigure  { margin: 1em; } (figure rules in base - not needed in book specific template)
-// fix on refactor-generic-elements branch
+.section > .title { page-break-after: avoid; }
 
 .colophon > h1.title {
   //this style Attributions and About Connections
-  color:white;
+  color: white;
   background-color: @green;
   margin: .5em 0;
- }
+}
 
 
 /******************************************************
@@ -429,9 +429,9 @@ p {
   caption {
     padding-top: .5em;
     padding-bottom: 1em;
-    font-weight:bold;
+    font-weight: bold;
     color: @green;
-    caption-side:bottom;
+    caption-side: bottom;
   }
 
   // Add styling for table entries that should render as table headers
@@ -475,6 +475,7 @@ p {
   }
 }
 
+
 /******************************************************
  * Figures/Subfigures
  ******************************************************/
@@ -486,13 +487,10 @@ p {
     display: inline;
     color: @tuscany;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
   }
 
-  & img {
-    //margin: 1em 0; //override auto  left/right margins from base
-    max-width: @page-width !important; //overrides width value figures/subfigures ensuring imgs do not bleed off page
-  }
+  & img { max-width: @page-width !important; } //overrides width value figures/subfigures ensuring imgs do not bleed off page
 
   > .caption {
     display: inline;
@@ -533,7 +531,7 @@ div.book {
 // TODO: If this is used by other books it should probably be moved to ccap-numbering.less
 div.end-of-book-solutions {
   div.solution {
-    display:inline;
+    display: inline;
     // Make the solutions pages span 2 columns
     //.x-column-count(2);
 
@@ -541,7 +539,7 @@ div.end-of-book-solutions {
     // This is a bit problematic for several reasons:
     //   - the place it would ideally be displayed is .body::first-child::before BUT...
     //   - the a.href with the exercise id (to look up the exercise number) is inside the .title (for EPUBs)
-    //   - single-letter solutions aren't wrapped in a para so there is no .body::first-child
+    //   - single-letter solutions are not wrapped in a para so there is no .body::first-child
     // I tried using string-set to squirrel away the exercise id but princexml does not support target-counter(string(...), counter-name)
     // I tried moving the anchor but princexml also does not support move-to
     > div.title {
@@ -569,16 +567,16 @@ div.end-of-book-solutions {
   column-width: auto !important;
 
   .title h2 {
-    padding:0;
-    color:@green;
-    text-transform:uppercase;
+    padding: 0;
+    color: @green;
+    text-transform: uppercase;
     font-size: x-large;
   }
   h3.letter {
-    color:inherit;
-    font-weight:bold;
+    color: inherit;
+    font-weight: bold;
     font-size: medium;
-    padding-top:.5em;
+    padding-top: .50em;
   }
 
  .index-term { font-size: small; }
@@ -619,7 +617,6 @@ div.end-of-book-solutions {
         color: black;
         font-size: medium;
       }
-
     }
   }
    prince-text-replace: "Answer:" ""; //strip out "Answer:" eob solutions for print_pdf

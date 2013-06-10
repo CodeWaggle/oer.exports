@@ -108,36 +108,32 @@ structure preface section module titles were passed in <h3> and subsection title
     background-position: top left;
     background-position: top outside;
     page-break-inside: avoid;
-	 page-break-after: avoid;	
-	 background-color: white;
+	  page-break-after: avoid;	
+	  background-color: white;
     content: "";
     display: block;
-   // the following are tweaked so the overlays really do over lay
+    // the following are tweaked so the overlays really do over lay
     margin-left: -1.05em;
     margin-right: -1.05em;
     margin-top: -0.03in;
   }
   .title {
 	 color: @color;
-    font-size: x-large;
-  	 margin: .25em 0;
-	     }
+   font-size: x-large;
+   margin: .25em 0;
+	}
    
   background-color: @bg-color;
-  &:before {
-    background-image: url("ccap-sociology/@{svg}.svg");
-  }
+  &:before { background-image: url("ccap-sociology/@{svg}.svg"); }
 }
 
 
 /* subsequent paragraphs are indented */
 .cnx-eoc p,
-p:nth-of-type(1) {
-  text-indent: 0em;
- }
+p:nth-of-type(1) { text-indent: 0em; }
 p {
   font-family: Liberation Serif, serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
- text-indent: 2em;
+  text-indent: 2em;
 }
 
 /* Customize EOC material */
@@ -164,20 +160,12 @@ p {
   font-weight: normal;
 }
 
-.cnx-eoc .section .title a {
-	color: @blue;
-	}
+.cnx-eoc .section .title a { color: @blue; }
 
-.exercise > .title a {
-  color: inherit;
-
-} 
-
+.exercise > .title a { color: inherit; }
 	
 /* Change "Glossary" to "Key Terms" */
-.glossary .title {
-  content: "Key Terms";
-}
+.glossary .title { content: "Key Terms"; }
 
 /* Add a title saying "Chapter Review" */
 .glossary:before {
@@ -189,29 +177,18 @@ p {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
 	
 /* Indent margins on list items */
-.cnx-eoc .problem .orderedlist li{
-	margin-left: 2em;
-}
-		
+.cnx-eoc .problem .orderedlist li {	margin-left: 2em; }
 
-.cnx-eoc.references p {
-  text-indent: 0em;
-}
+.cnx-eoc.references p { text-indent: 0em; }
 
 
-body {
-  font-size: 9.5pt;
-}
+body { font-size: 9.5pt; }
 
-img {
-  max-width: 5in;
-}
+img { max-width: 5in; }
 
 /* From ccap-physics.css */
-
 h1.title {
   background-color: Purple;
   font-size: 5em; 
@@ -224,36 +201,21 @@ h1.title .cnx-gentext-n {
   padding-left: 0.25em;
   padding-right: 0em;
 }
-h1.title {
-  text-transform: none;
-}
-h2:before{
-  color: inherit;
-}
+h1.title { text-transform: none; }
+h2:before{ color: inherit; }
 a {
 	color: inherit;
 	font-weight: normal;
 }
-.toc > li > ul a {
-  color: #0061AA;
-}
-h2, h3 {
-  margin: 0.5em 0em;
-}
+.toc > li > ul a { color: #0061AA; }
+h2, h3 { margin: 0.5em 0em; }
 h2 {
   color: Purple;
   font-size: x-large;
 }
 
-.section > .table {
-  //float: bottom;
-}
-.table table {
-  background-color: @cream;
-}
-.table th {
-  background-color: @green;
-}
+.table table { background-color: @cream; }
+.table th { background-color: @green; }
 
 .table caption { 
   color: Purple;
@@ -264,31 +226,21 @@ div.table-caption {
   color: black;
   font-weight: normal !important; //override from base
 }
-.table th {
-  background-color: Purple;
-}
-
+.table th { background-color: Purple; }
 
 .chapter h3 {
 	color: @teal;
 	font-size: large;
 }
-.section > .figure {
-  //float: top;
-  //float: snap;
-}
+
 .figure .title {
   display: inline;
 	color: black;
 	font-weight: bold;
 	font-size: small;
 }
-.figure > .caption {
-  display: inline;
-}
-.note > .title {
-  border-bottom: 0px;  
-}
+.figure > .caption { display: inline; }
+.note > .title { border-bottom: 0px; }
 
 /* These are end-of-chapter collected solutions */
 .solutions {
@@ -298,21 +250,13 @@ div.table-caption {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   
-  a {
-    color: gray;
-    //font-weight: bold;
-  }
+  a { color: gray; }
 
-  & * {
-    display: inline;
-  }
+  & * { display: inline; }
     
-  & > div {
+  > div {
     margin: 0em 0.5em;
-    
-    &.title {
-      border: 0em; // remove the underscore
-    }
+    &.title { border: 0em; } // remove the underscore
   }
 }
 
